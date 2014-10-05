@@ -1,4 +1,4 @@
 all:
-	pdflatex lecture.tex
-	pdflatex lecture.tex
-	xdg-open lecture.pdf
+	pdflatex slides.tex
+	pdflatex slides.tex
+	xdg-open slides.pdf

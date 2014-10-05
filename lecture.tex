@@ -29,7 +29,11 @@
 \usepackage{hyperref}
 \usepackage{LTPlius}
 
+\usepackage{caption}
+\usepackage{subfig}
+
 \include{pythonlisting}
+
 
 
 
@@ -79,6 +83,23 @@
     \caption{VU logotipas}
 \end{figure}
 \end{frame}
+
+
+\begin{frame}{Dviejų paveiksliukų įterpimo pavyzdys}
+\begin{figure}[!htbp]
+\subfloat[][Pirmojo paveiksliuko pavadinimas]{
+    \includegraphics[width=0.33\textwidth]{vu_logo}
+    \label{fig:pirmojo paveiksliuko id}
+}
+\subfloat[][Antrojo paveiksliuko pavadinimas]{
+    \includegraphics[width=0.33\textwidth]{vu_logo}
+    \label{fig:antrojo paveiksliuko id}
+}
+\caption{Bendras abiejų paveiksliukų pavadinimas}
+\label{fig:paveiksliuku pavyzdzio id}
+\end{figure}
+\end{frame}
+
 
 \subsection{Python kodo fragmento pavyzdys}
 \begin{frame}[fragile]{Python kodo framgmento įterpimo pavyzdys}
